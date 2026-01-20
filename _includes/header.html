@@ -16,7 +16,7 @@
         </a>
       </li>
       {% for my_page in site.pages %}
-        {% unless page.exclude %}
+        {% unless my_page.exclude %}
           {% if my_page.title %}
           <li class="inline-block block-lg text-right ml-1 ml-lg-0">
             <a class="italic no-underline h4" href="{{ my_page.url | prepend: site.baseurl }}">
